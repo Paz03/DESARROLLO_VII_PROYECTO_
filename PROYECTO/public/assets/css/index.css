@@ -1,0 +1,285 @@
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        /* Navegación */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 15px;
+            color: white;
+        }
+        .nav-logo {
+            margin-left: 15px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px; /* Espaciado alrededor del texto para dar apariencia de botón */
+            border-radius: 5px; /* Borde redondeado */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Transición para el cambio de color */
+        }
+        .nav-links a:hover {
+            background-color: #FF5722; /* Fondo naranja al hacer hover */
+            color: white; /* Cambia el color del texto a blanco */
+        }
+
+        /* Estilos adicionales */
+        header {
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .main-banner {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+            background-size: cover;
+            background-position: center;
+        }
+        .content-sections, .experience-sections, .testimonial-sections, .offers-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background: linear-gradient(to right, #FF5722, #E64A19); /* Degradado naranja */
+            color: white;
+            text-align: center;
+        }
+
+        .content-sections {
+            display: flex;
+            padding: 0; /* Sin padding general */
+            text-align: center;
+            margin: 0; /* Sin márgenes generales */
+        }
+
+        .content-sections div {
+            flex: 1; /* Cada div ocupa el mismo ancho proporcionalmente */
+            padding: 20px;
+            border: none; /* Eliminamos bordes */
+            color: #333; /* Texto oscuro */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Colores contrastantes y cálidos */
+        .content-sections div:nth-child(1) {
+            background-color: #FF8A65; /* Naranja salmón pastel */
+        }
+
+        .content-sections div:nth-child(2) {
+            background-color: #FFD180; /* Amarillo cálido pastel */
+        }
+
+        .content-sections div:nth-child(3) {
+            background-color: #D7CCC8; /* Beige grisáceo */
+        }
+
+        .cta-section1 {
+            padding: 0;
+            text-align: center;
+            background: url('img/imagen_principal.jpg') no-repeat center center;
+            background-size: cover; /* La imagen cubrirá todo el contenedor */
+            min-height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: relative; /* Asegura que los elementos internos no se desplacen */
+            box-shadow: none; /* Elimina cualquier sombra externa */
+        }
+
+        .cta-section1 h1, .cta-section1 p {
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Mantiene el texto legible */
+        }
+
+
+        .cta-section1 h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Texto más legible sobre la imagen */
+        }
+
+        .cta-section1 p {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .cta-buttons {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            background: linear-gradient(to right, #FF5722, #E64A19); /* Degradado naranja */
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease; /* Suaviza las transiciones */
+        }
+
+        .cta-buttons:hover {
+            background: linear-gradient(to right, #E64A19, #D84315); /* Cambia el degradado al pasar el mouse */
+            transform: translateY(-3px); /* Sutil efecto de elevación */
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .cta-buttons:active {
+            transform: translateY(1px); /* Botón se "presiona" */
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .cta-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-buttons a:hover {
+            transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .cta-section, .testimonial-section, .offers-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Estilos para la sección de Experiencias Destacadas */
+        .experience-sections {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: #FF5722; /* Fondo naranja */
+            color: white;
+            text-align: center;
+        }
+
+        .experience-sections div {
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 45%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .experience-sections div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .experience-sections h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #FF5722;
+        }
+
+        .experience-sections img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para la sección de Testimonios */
+        .testimonial-section {
+            padding: 40px 20px;
+            background-color: white; /* Fondo pastel suave */
+            color: #333;
+            text-align: center;
+        }
+
+        .testimonial-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #FF5722;
+        }
+
+        .testimonial-sections {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .testimonial-sections div {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 45%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .testimonial-sections div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .testimonial-sections img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-sections p {
+            font-style: italic;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background-color: #101214;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .experience-sections img, .testimonial-sections img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        /* Nuevos estilos para las secciones con imagen y contenido */
+        .image-text-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .image-text-section img {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .image-text-section .text-content {
+            width: 45%;
+        }
+        .image-text-section.reverse {
+            flex-direction: row-reverse;
+        }

@@ -1,0 +1,97 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 15px;
+    color: white;
+}
+
+.nav-logo a {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #FF5722;
+    color: white;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #FF5722;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Botón de eliminar */
+.btn-eliminar {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-eliminar:hover {
+    background-color: #e64a19;
+}
+
+/* Estilos de mensaje cuando no hay reservas */
+.reservas-container p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+}

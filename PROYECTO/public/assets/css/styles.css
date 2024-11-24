@@ -1,0 +1,390 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo del Encabezado */
+header {
+    background-color: rgba(0, 64, 128, 0.9);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* habitaciones */
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la Navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 15px;
+    color: white;
+}
+
+.nav-logo {
+    margin-left: 15px;
+}
+
+.nav-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.nav-links a:hover {
+    background-color: #FF5722; 
+    color: white; 
+}
+
+.content-sections, .experience-sections, .testimonial-sections, .offers-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #FF5722, #E64A19); /* Degradado naranja */
+    color: white;
+    text-align: center;
+}
+
+.content-sections {
+    display: flex;
+    padding: 0; /* Sin padding general */
+    text-align: center;
+    margin: 0; /* Sin márgenes generales */
+}
+
+.content-sections div {
+    flex: 1; /* Cada div ocupa el mismo ancho proporcionalmente */
+    padding: 20px;
+    border: none; /* Eliminamos bordes */
+    color: #333; /* Texto oscuro */
+    font-family: Arial, sans-serif;
+}
+
+/* Colores contrastantes y cálidos */
+.content-sections div:nth-child(1) {
+    background-color: #FF8A65; /* Naranja salmón pastel */
+}
+
+.content-sections div:nth-child(2) {
+    background-color: #FFD180; /* Amarillo cálido pastel */
+}
+
+.content-sections div:nth-child(3) {
+    background-color: #D7CCC8; /* Beige grisáceo */
+}
+
+
+/* Exclusiva de index y habitaciones */
+.container-imagen-principal {
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    background: url('../public/assets/css/img/imagen_principal.jpg') no-repeat center center/cover;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+/* Estilos del Formulario de Búsqueda */
+form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+form input,
+form select,
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form select {
+    background-color: #ffffff;
+}
+
+form button {
+    background-color: #ff4d4d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e63946;
+}
+
+form button:active {
+    transform: translateY(1px); /* Botón se "presiona" */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos de la Cuadrícula de Habitaciones */
+.habitaciones-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.habitacion {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* habitaciones */
+.habitacion h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0;
+}
+
+.habitacion p {
+    color: #666;
+    font-size: 14px;
+}
+
+.imagen-habitacion {
+    width: 100%; /* Imagen se adapta al ancho del contenedor */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.cta-buttons {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FF5722, #E64A19); /* Degradado naranja */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease; /* Suaviza las transiciones */
+}
+
+.cta-buttons:hover {
+    background: linear-gradient(to right, #E64A19, #D84315); /* Cambia el degradado al pasar el mouse */
+    transform: translateY(-3px); /* Sutil efecto de elevación */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.cta-buttons:active {
+    transform: translateY(1px); /* Botón se "presiona" */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cta-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-buttons a:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+}
+
+.reservada {
+    color: red;
+    font-weight: bold;
+}
+
+.experience-sections img, .testimonial-sections img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.cta-section, .testimonial-section, .offers-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilos para la sección de Experiencias Destacadas */
+.experience-sections {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #FF5722; /* Fondo naranja */
+    color: white;
+    text-align: center;
+}
+
+.experience-sections div {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-sections div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.experience-sections h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FF5722;
+}
+
+.experience-sections img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de Testimonios */
+.testimonial-section {
+    padding: 40px 20px;
+    background-color: white; /* Fondo pastel suave */
+    color: #333;
+    text-align: center;
+}
+
+.testimonial-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #FF5722;
+}
+
+.testimonial-sections {
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonial-sections div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-sections div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-sections img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.testimonial-sections p {
+    font-style: italic;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* Nuevos estilos para las secciones con imagen y contenido */
+.image-text-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+.image-text-section img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+.image-text-section .text-content {
+    width: 45%;
+}
+.image-text-section.reverse {
+    flex-direction: row-reverse;
+}
+
+footer {
+    background-color: #101214;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
